@@ -1,7 +1,17 @@
-# Ubuntu-21.10-Impish-Indri-Nexus-7-2012-rev.-E1565-kernel-5.15.0-rc4-next-20211011-postmarketos-grate
+# Ubuntu MATE 21.10 Impish Indri Nexus 7 2012 rev. E1565 kernel-5.15.0-rc4
 Nexus 7 2012
 
 Link tải trên Gdrive:
+
+
+
+Ubuntu MATE 21.10 Impish Indri ext4 kernel-5.15.0-rc4-next-20211011-postmarketos-grate
+
+https://drive.google.com/drive/u/1/folders/1Ib3Xdz0oG1EiWU2MDjyr7o6LxN8xHWCt
+
+
+
+Ubuntu 21.10 Impish Indri preinstalled server ext4 kernel-5.15.0-rc4-next-20211011-postmarketos-grate
 
 https://drive.google.com/drive/u/0/folders/1GC9I_hZl3H6LVd2IG_XYJLHrq6Bj-c6C
 
@@ -25,7 +35,7 @@ https://stackoverflow.com/questions/61591885/how-do-i-set-a-custom-password-with
 
 
 
-Cách kiểm tra Nexus 7 2012 là mã cũ PM269 hay E1565. Tham khao:
+Cách kiểm tra Nexus 7 2012 là mã cũ PM269 hay E1565. Tham khảo:
 
 https://wiki.postmarketos.org/wiki/Google_Nexus_7_2012_(asus-grouper)
 
@@ -58,6 +68,12 @@ TWRP (adb shell) $ find /sys/devices/ | grep -c max776 && echo You have E1565
 
 
 TWRP (adb shell) $ find /sys/devices/ | grep -c tps6591 && echo You have PM269
+
+
+
+Install Alpine Linux on Virtualbox:
+
+[MEDIA=youtube]1_bsycXrFcI[/MEDIA]
 
 
 
@@ -114,6 +130,42 @@ https://askubuntu.com/questions/1346874/failed-to-check-for-processor-microcode-
 
 
 
+Rotate fbcon
+
+
+
+# sudo su
+
+
+
+# echo 1 | sudo tee /sys/class/graphics/fbcon/rotate
+
+
+
+# echo 1 | sudo tee /sys/class/graphics/fbcon/rotate_all
+
+
+
+# sudo apt install network-manager
+
+
+
+# chown -hvR ubuntu /home/ubuntu
+
+
+
+Install xubuntu-core
+
+
+
+# sudo apt install xubuntu-core^
+
+
+
+# sudo apt install bluez blueman htop neofetch iio-sensor-proxy perl x11-xserver-utils
+
+
+
 grate-driver 2D/3D GPU accelerate on launchpad.net
 
 https://launchpad.net/~grate-driver/+archive/ubuntu/ppa/+packages?field.name_filter=&field.status_filter=published&field.series_filter=impish
@@ -132,28 +184,38 @@ https://launchpad.net/~grate-driver/+archive/ubuntu/ppa/+packages?field.name_fil
 
 
 
-Install xubuntu-core
-
-
-
-# sudo apt install xubuntu-core^
-
-
-
-# sudo apt install bluez blueman htop neofetch iio-sensor-proxy perl x11-xserver-utils xrandr
-
-
+Rotate screen
 
 https://gitlab.com/gullradriel/asus-grouper-nexus-7-sensor-daemon
 
 
 
+Các phần mềm hỗ trợ để trong /opt
+
+
+
+Image source là Ubuntu MATE 21.10 rpi armhf
+
+https://releases.ubuntu-mate.org/impish/armhf/ubuntu-mate-21.10-beta1-desktop-armhf+raspi.img.xz
+
+
+
 Image source là Raspberry Pi Generic (Hard-Float) preinstalled server image:
 
-https://cdimage.ubuntu.com/ubuntu-server/daily-preinstalled/current/impish-preinstalled-server-armhf+raspi.img.xz
+https://cdimage.ubuntu.com/ubuntu/releases/21.10/release/ubuntu-21.10-preinstalled-server-armhf+raspi.img.xz
+
+
+
+Ubuntu MATE guide:
+
+https://tinhte.vn/thread/ubuntu-mate-20-04-3-lts-nexus-7-2012-rev-e1565-kernel-5-15-0-rc4-next-20211011-postmarketos-grate.3198632/
 
 
 
 Xem thêm hướng dẫn trong bài post này:
 
 https://tinhte.vn/thread/ubuntu-21-04-1-hirsute-hippo-pre-image-cho-nexus-7-2012-wifi-rev-e1565-kernel-5-14-rc3-next-grate.3392201/
+
+
+
+[MEDIA=youtube]XKZG655V5PQ[/MEDIA]
